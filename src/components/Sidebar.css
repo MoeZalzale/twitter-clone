@@ -1,0 +1,25 @@
+.sidebar{
+    flex: 0.3;
+    border-right: 1px solid var(--twitter-background);
+    margin-top: 20px;
+
+}
+
+.sidebar > .MuiSvgIcon-root{
+    margin-left: 50%;
+    padding: 20px;
+    color: var(--twitter-color);
+    font-size: 30px;
+}
+
+.sidebar > .sidebar__tweet{
+    background-color: var(--twitter-color) !important;
+    border-radius: 20px !important;
+    margin-left: 50%;
+    width: 40%;
+    font-weight: 900  !important;
+    color: white !important;
+    margin-top: 5%;
+    text-transform: inherit !important;
+}
+

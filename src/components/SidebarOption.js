@@ -1,9 +1,10 @@
 import React from 'react'
-
-function SidebarOption({text}) {
+import './SidebarOptions.css'
+function SidebarOption({text,Icon}) {
     return (
-        <div>
-            <h1>{Icon} {text}</h1>
+        <div className="sidebarOption">
+            <Icon />
+            <h2> {text}</h2>
         </div>
     )
 }

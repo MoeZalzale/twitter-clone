@@ -1,0 +1,45 @@
+.feed{
+    flex:0.3;
+    border-right: 1px solid var(--twitter-background);
+}
+
+.feed > .header > h2{
+margin: 20px;
+
+    
+}
+
+.feed > form > .tweetBox{
+
+    border-bottom: 10px solid var(--twitter-background);
+}
+
+.feed > .header{
+    border-bottom: 1px solid var(--twitter-background);
+    position: sticky;
+}
+
+.feed > form > .tweetBox > .input{
+
+    display: flex;
+    padding: 20px;
+    
+}
+
+.feed > form > .tweetBox > .input > input{
+margin-left: 20px;
+border: hidden;
+font-size: 20px;
+}
+
+.feed > form > .tweetBox > button{
+    background-color: var(--twitter-color) !important;
+    border-radius: 20px !important;
+    margin-left: 80%;
+    width: 15%;
+    font-weight: 900  !important;
+    color: white !important;
+    text-transform: inherit !important;
+    margin-bottom: 20px;
+
+}

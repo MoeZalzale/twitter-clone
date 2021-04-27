@@ -22,6 +22,10 @@ function Feed() {
 
             <div className="posts">
                 <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
             </div>
             
             </form>

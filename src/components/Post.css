@@ -1,16 +1,40 @@
 
 
-.post > .info{
+.post > .header{
     display: flex;
-    padding-bottom:20px;
+    align-items:center;
+
 }
-.post > .info > h3{
+.post > .header> h3{
 
     padding: 0 20px;
 }
 
-.post{
 
+.post{
     border-bottom: 1px solid var(--twitter-background);
-    margin: 20px;
+    padding: 20px;
 }
+
+
+
+.post > .body{
+    padding: 10px 0;
+
+}
+
+.post > .body > .media > img{
+border-radius: 20px;
+max-width: 70%;
+width: auto;
+height: auto;
+}
+
+.post > .body > .media {
+    text-align: center;
+    padding: 10px 0;
+    }
+
+    .post > .body > .text > p{
+    }
+

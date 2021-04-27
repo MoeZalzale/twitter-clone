@@ -1,13 +1,12 @@
 .feed{
-    flex:0.3;
+    flex:0.35;
     border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;
+    min-width: fit-content;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
-.feed > .header > h2{
-margin: 20px;
-
-    
-}
 
 .feed > form > .tweetBox{
 
@@ -17,6 +16,12 @@ margin: 20px;
 .feed > .header{
     border-bottom: 1px solid var(--twitter-background);
     position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    padding: 15px;
+
+   
 }
 
 .feed > form > .tweetBox > .input{

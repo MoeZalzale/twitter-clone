@@ -12,7 +12,7 @@ function Post() {
             </div>
         <div className='body'>
             <div className='text'>
-            <p>eeeeeeeddddddddd</p>
+            <p>eeeeeeedllllllddddddd</p>
             </div>
             <div className="media">
             <img className='pic' src="https://media2.giphy.com/media/Z9WQLSrsQKH3uBbiXq/giphy.gif"></img>

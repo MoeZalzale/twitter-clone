@@ -12,6 +12,10 @@
 
 
 .post{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
     border-bottom: 1px solid var(--twitter-background);
     padding: 20px;
 }
@@ -33,8 +37,11 @@ height: auto;
 .post > .body > .media {
     text-align: center;
     padding: 10px 0;
+    align-self: flex-end;
     }
 
-    .post > .body > .text > p{
-    }
+.post > .body > .text{
+    min-width: 0;
+    max-width: inherit;
+}
 

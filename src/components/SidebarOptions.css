@@ -3,6 +3,7 @@
     align-items: center;
     cursor: pointer;
     margin-left: 50%;
+    padding-right: 10%;
 }
 
 .sidebarOption > .MuiSvgIcon-root{

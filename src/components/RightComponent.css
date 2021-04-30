@@ -1,0 +1,30 @@
+.header > span{
+font-weight: 200;
+
+}
+.header {
+    padding-bottom: 5px;
+}
+
+
+
+
+.rightComponent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-top: 1px solid white;
+    
+
+}
+
+
+.rightComponent:hover{
+    background-color: var(--twitter-background);
+    border-radius: 20px;
+    color: var(--twitter-color);
+    transition: background-color 100ms ease-out ;
+    cursor: pointer;
+    border:hidden;
+}

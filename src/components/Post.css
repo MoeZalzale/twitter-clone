@@ -1,4 +1,9 @@
 
+.post{
+  
+    border-bottom: 1px solid var(--twitter-background);
+    padding: 20px;
+}
 
 .post > .header{
     display: flex;
@@ -10,22 +15,19 @@
     padding: 0 20px;
 }
 
-
-.post{
+.post > .body{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    border-bottom: 1px solid var(--twitter-background);
-    padding: 20px;
-}
-
-
-
-.post > .body{
     padding: 10px 0;
 
 }
+
+.post > .body > .media {
+     padding: 10px 0;
+     text-align: center;
+     margin-top: 10px;
+     
+     }
 
 .post > .body > .media > img{
 border-radius: 20px;
@@ -34,14 +36,11 @@ width: auto;
 height: auto;
 }
 
-.post > .body > .media {
-    text-align: center;
-    padding: 10px 0;
-    align-self: flex-end;
-    }
+
 
 .post > .body > .text{
+    max-width: 100%;
+    text-overflow: ellipsis;
     min-width: 0;
-    max-width: inherit;
 }
 

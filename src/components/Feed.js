@@ -5,11 +5,27 @@ import Post from './Post'
 import db from './firebase'
 function Feed() {
     const [posts,setPosts]=useState([])
+    const [tweetBox,setTweet]=useState("")
 
     useEffect(() =>
     db.collection('posts').onSnapshot(snapshot => (setPosts(snapshot.docs.map(doc => doc.data()))) )
     
     ,[])
+
+    const sendTweet = (e)=>{
+        e.preventDefault();
+        db.collection("posts").add({
+            text:"Moe Zalzale",
+            tweet:tweetBox,
+            address:"@zalzale7",
+            avatar:"https://pbs.twimg.com/profile_images/1384988246216695808/W0thyibh_400x400.jpg"
+
+        });
+
+        setTweet("")
+
+
+    };
 
     return (
         <div className='feed'>
@@ -22,9 +38,9 @@ function Feed() {
 
                 <div className="input">
                 <Avatar className="avatar" src="https://pbs.twimg.com/profile_images/1384988246216695808/W0thyibh_400x400.jpg"></Avatar>
-                <input type ="text" placeholder="whats happening?"></input>
+                <input onChange={(e)=> setTweet(e.target.value)} value= {tweetBox} type ="text" placeholder="whats happening?"></input>
                 </div>
-                <Button variant='outlined' className="button"> Tweet</Button>
+                <Button onClick={sendTweet}type="submit" className="button"> Tweet</Button>
             </div>
 
             <div className="posts">
